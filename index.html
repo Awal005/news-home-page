@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind</title>
+     <style type="text/tailwindcss">
+      @theme {
+        --color-wine: #ED017F;
+      }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="underline text-3xl font-bold">Hello world</h1> -->
+     <nav class="border container mx-auto flex justify-between py-6 px-10">
+        <h1>Tailwind-tutorials</h1>
+        <ul class="md:flex hidden items-center gap-8">
+            <li class="hover:underline cursor-pointer">Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <h1 class="md:hidden">menu-icon</h1>
+     </nav>
+     <h1 class="md:text-center">work</h1>
+     <!-- main -->
+      <main class="container mx-auto py-6 px-10 border mt-10">
+        <h2>Welcome</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <p class="border">Box 1</p>
+            <p class="border">Box 2</p>
+            <p class="border">Box 3</p>
+            <p class="border">Box 4</p>
+            <p class="border">Box 5</p>
+            <p class="border">Box 6</p>
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p> -->
+        <form class="mt-4 relative">
+            <input class="border border-wine" type="text">
+            <p class="text-wine absolute bottom-[2.5px] left-34">toggle</p>
+        </form>
+      </main>
+      <footer>
+        <p>&copy; 2025 Team. All rights reserved</p>
+        <div>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+      </footer>
+</body>
+</html>

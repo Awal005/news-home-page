@@ -1,0 +1,15 @@
+main{
+    #desktop{
+        display: none;
+    }
+}
+
+
+@media(min-width:1600px){
+    main{
+        max-width: 1024px;
+    }
+    #mobile{
+        display: none;
+    }
+}
